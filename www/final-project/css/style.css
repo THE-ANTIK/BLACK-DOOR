@@ -1,0 +1,131 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300);
+
+/**
+ * style for video background
+ */
+body {
+    margin: 0;
+    background: #000;
+}
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+}
+.stopfade {
+    opacity: .5;
+}
+#desc {
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight:100;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    padding: 2rem;
+    width: 33%;
+    margin:2rem;
+    float: right;
+    font-size: 1.2rem;
+}
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+}
+#desc button {
+    display: block;
+    width: 80%;
+    padding: .4rem;
+    border: none;
+    margin: 1rem auto;
+    font-size: 1.3rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background;
+}
+#desc button:hover {
+    background: rgba(0,0,0,0.5);
+}
+
+a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    background:rgba(0,0,0,0.5);
+    padding: .5rem;
+    transition: .6s background;
+}
+a:hover{
+    background:rgba(0,0,0,0.9);
+}
+@media screen and (max-width: 500px) {
+    div{width:70%;}
+    .story { display: none;
+    }
+}
+@media screen and (max-device-width: 800px) {
+    html { background: url(//demosthenes.info/assets/images/polina.jpg) #000 no-repeat center center fixed; }
+    #bgvid { display: none; }
+
+}
+
+/**
+ * style for roulette
+ */
+
+#content {
+    width: 800px;
+    margin: 0px auto;
+}
+
+.section {
+    clear: both;
+    margin: 0px 0px 56px 0px;
+}
+
+#spin {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    width: 60%;
+    padding: 1.4rem;
+    font-family: Roboto Condensed, sans-serif;
+    border: none;
+    font-size: 1.8rem;
+    background: rgba(255,255,255,0.23);
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s background;
+
+}
+
+@media screen and (max-width: 768px) {
+    /*Navigation*/
+    nav li {
+        display: none;
+        margin: 1.5%;
+    }
+    nav li:first-child { /* the hamburger li */
+        display: block;
+        width: 30%;
+    }
+    .menu-expanded li {
+        display: block;
+        width: 97%;
+    }
+    /*Main and footer*/
+    #container>div+div, /* select all divs that have a div immediatley before and is inside the element with the id container */
+    footer>div {
+        width: 97%;
+        /*100%-3% margins*/
+    }

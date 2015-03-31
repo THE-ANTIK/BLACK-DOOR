@@ -1,0 +1,6 @@
+{
+  "name": "jenny-perier-few-16",
+  "root": "www",
+  "clean_urls": true,
+  "error_page": "error.html"
+}
